@@ -31,4 +31,16 @@ App::uses('Controller', 'Controller');
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+
+	// tells auth to allow index and view functions for that controller
+	// public function beforeFilter() {
+	// 	$this->Auth->allow('index', 'view');
+	// }
+	// === both data type and value are equal
+	public function isAuthorized($user) {
+		if (isset($user['role']) && $user['role'] === 'admin') {
+			return true;
+		}
+		return false;
+	}
 }
