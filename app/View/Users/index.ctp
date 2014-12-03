@@ -5,7 +5,7 @@
 </head>
 <body>
 	<h1>USERS</h1>
-	<table>
+	<table class="table table-striped">
     <tr>
         <th>id</th>
 		<th>username</th>

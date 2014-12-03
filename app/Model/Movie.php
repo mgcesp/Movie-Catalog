@@ -2,14 +2,14 @@
 
 <?php
 // creates model to interact with DB
-class Film extends AppModel {
+class Movie extends AppModel {
 	public $validate = array(
-		'film_title' => array(
+		'title' => array(
 			'rule' => 'notEmpty'
 		),
 		'description' => array(
 			'rule' => 'notEmpty'
-		)
+		),
 	);
 }
 ?>

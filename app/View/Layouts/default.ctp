@@ -50,13 +50,16 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		<?php echo $this->Session->flash() ?>
 
 		<?php echo $this->fetch('content'); ?>
-		<hr>
+
 		<footer>
-			<p>Developed by mcfresh</p>
+			<div>
+				<p>Developed by mcfresh</p>
+			</div>
 		</footer>
 		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 		<?php echo $this->Html->script('bootstrap.min') ?>
 	</div>
-	<?php echo $this->element('sql_dump'); ?>
+	<!-- sql dump -->
+	<?php //echo $this->element('sql_dump'); ?>
 </body>
 </html>

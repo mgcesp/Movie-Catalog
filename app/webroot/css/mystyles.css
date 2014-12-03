@@ -20,3 +20,23 @@ html, body {
 .row {
 	margin: 0;
 }
+
+/* Moview index.ctp */
+.title {
+	text-align: center;
+}
+
+.movie-table {
+	margin: 20px;
+	background-color: #4B77BE;
+}
+
+/* Movies add.ctp */
+.movie-form {
+	margin: 40px;
+}
+
+/* Footer */
+footer {
+	text-align: center;
+}
